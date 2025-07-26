@@ -1,5 +1,6 @@
 import img1 from "../../src/assets/about/images/WEB--2.png";
 
+
 const content = [
   {
     type: "detail",

@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
 
-function AboutHighlights() {
+function AboutHighlights({ img1, img2, text }) {
   return (
-    <div>AboutHighlights</div>
-  )
+    <section>
+      <img src={img1} alt={img1} />
+      <h3>{text}</h3>
+      <img src={img2} alt={img1} />
+    </section>
+  );
 }
 
-export default AboutHighlights
+export default AboutHighlights;
