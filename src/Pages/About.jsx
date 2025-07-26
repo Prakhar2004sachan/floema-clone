@@ -1,6 +1,6 @@
 import React from "react";
-import AboutGallery from "../Components/AboutGallery";
-import AboutTitle from "./AboutTitle";
+import AboutGallery from "../Components/About/AboutGallery";
+import AboutTitle from "../Components/About/AboutTitle";
 function About() {
   return <div>
     <AboutGallery/>
