@@ -15,16 +15,29 @@ function About() {
           <br />
           between threads and metal
         </AboutTitle>
-        {content.map((item, idx) => (
-          <AboutInfo
-            info={item.info}
-            content={item.text}
-            imgUrl={item.img}
-            key={idx}
-            display={item.display}
-            fixed="true"
-          />
-        ))}
+        <AboutInfo
+          className="ml-[15rem]"
+          info={content[0].info}
+          content={content[0].text}
+          imgUrl={content[0].img}
+          display={content[0].display}
+          fixed="true"
+        />
+        <AboutTitle>
+          The surprise of what is possible
+          <br />
+          to make with a simple
+          <br />
+          and thin thread.
+        </AboutTitle>
+        <AboutInfo
+          classImg="pl-[10rem] -rotate-3"
+          info={content[1].info}
+          content={content[1].text}
+          imgUrl={content[1].img}
+          display={content[1].display}
+          fixed="true"
+        />
         <AboutTitle>
           The surprise of what is possible
           <br />
