@@ -1,11 +1,9 @@
 import React from "react";
 
-function AboutTitle({ title_Pfirst, title_Psecond }) {
+function AboutTitle({ children }) {
   return (
-    <h1 className="font-main font-thin text-[5rem] text-center">
-      {title_Pfirst}
-      <br />
-      {title_Psecond}
+    <h1 className="font-main font-thin text-[6rem] text-center leading-[1.2]">
+      {children}
     </h1>
   );
 }
