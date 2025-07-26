@@ -1,1 +1,25 @@
 @import "tailwindcss";
+
+@font-face {
+    font-family: GeorgeX;
+    src: url('./fonts/GeorgeX.woff2');
+}
+@font-face {
+    font-family: SuisseBPIntL;
+    src: url('./fonts/SuisseBPIntl-Light.woff2');
+}
+@font-face {
+    font-family: SuisseBPIntR;
+    src: url('./fonts/SuisseBPIntl-Regular.woff2');
+}
+@font-face {
+    font-family: SuisseBPIntUL;
+    src: url('./fonts/SuisseBPIntl-UltraLight.woff2');
+}
+
+@theme {
+  --font-main: "GeorgeX", "sans-serif"; 
+  --font-text: "SuisseBPIntL", "sans-serif"; 
+  --font-text-heading: "SuisseBPIntR", "sans-serif"; 
+  /* --font-text: "SuisseBPIntL", "sans-serif";  */
+}
