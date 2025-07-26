@@ -1,21 +1,11 @@
-import React, { useEffect, useState } from "react";
-import media from "../../data/about/images";
+import React from "react";
+import AboutGallery from "../Components/AboutGallery";
+import AboutTitle from "./AboutTitle";
 function About() {
-  const [images, setImages] = useState([]);
-
-  useEffect(() => {
-    setImages(media);
-    // console.log(images);
-  }, []);
-
-  images.map((url) => [console.log(url.image)]);
-  return (
-    <div>
-      {images.map((url, idx) => (
-        <img src={url.image} alt={`Image ${idx + 1}`} key={idx + 1} />
-      ))}
-    </div>
-  );
+  return <div>
+    <AboutGallery/>
+    <AboutTitle title={"Creating new dialogues between threads and metal"}/>
+  </div>;
 }
 
 export default About;
