@@ -24,7 +24,7 @@ function Home() {
     <>
       {isLoading && <Preloader percentage={percentage} />}
       {!isLoading && (
-        <div className="bg-[#C97164] w-ful h-screen overflow-hidden"></div>
+        <div className="bg-[#C97164] w-ful h-screen overflow-hidden no-scroll"></div>
       )}
     </>
   );
