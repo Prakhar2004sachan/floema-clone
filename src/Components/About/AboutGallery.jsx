@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import media from "../../../data/about/images";
+import {media} from "../../../data/about/images";
 
 function AboutGallery() {
   const [images, setImages] = useState([]);

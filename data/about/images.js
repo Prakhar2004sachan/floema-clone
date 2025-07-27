@@ -17,6 +17,28 @@ import img16 from "../../src/assets/about/gallery/16.png";
 import img17 from "../../src/assets/about/gallery/17.png";
 import img18 from "../../src/assets/about/gallery/18.png";
 
+import poster1 from "../../src/assets/about/posters/1.jpg";
+import poster2 from "../../src/assets/about/posters/2.jpg";
+import poster3 from "../../src/assets/about/posters/3.jpg";
+import poster4 from "../../src/assets/about/posters/4.jpg";
+import poster5 from "../../src/assets/about/posters/5.jpg";
+import poster6 from "../../src/assets/about/posters/6.jpg";
+import poster7 from "../../src/assets/about/posters/7.jpg";
+import poster8 from "../../src/assets/about/posters/8.jpg";
+import poster9 from "../../src/assets/about/posters/9.jpg";
+import poster10 from "../../src/assets/about/posters/10.jpg";
+import poster11 from "../../src/assets/about/posters/11.jpg";
+import poster12 from "../../src/assets/about/posters/12.jpg";
+import poster13 from "../../src/assets/about/posters/a.jpg";
+import poster14 from "../../src/assets/about/posters/b.jpg";
+import poster15 from "../../src/assets/about/posters/c.jpg";
+import poster16 from "../../src/assets/about/posters/d.jpg";
+import poster17 from "../../src/assets/about/posters/e.jpg";
+import poster18 from "../../src/assets/about/posters/f.jpg";
+import poster19 from "../../src/assets/about/posters/g.jpg";
+import poster20 from "../../src/assets/about/posters/h.jpg";
+import poster21 from "../../src/assets/about/posters/i.jpg";
+
 const media = [
   { image: img1 },
   { image: img2 },
@@ -38,4 +60,28 @@ const media = [
   { image: img18 },
 ];
 
-export default media;
+const poster = [
+  { poster: poster1 },
+  { poster: poster2 },
+  { poster: poster3 },
+  { poster: poster4 },
+  { poster: poster5 },
+  { poster: poster6 },
+  { poster: poster7 },
+  { poster: poster8 },
+  { poster: poster9 },
+  { poster: poster10 },
+  { poster: poster11 },
+  { poster: poster12 },
+  { poster: poster13 },
+  { poster: poster14 },
+  { poster: poster15 },
+  { poster: poster16 },
+  { poster: poster17 },
+  { poster: poster18 },
+  { poster: poster19 },
+  { poster: poster20 },
+  { poster: poster21 },
+];
+
+export { media, poster };

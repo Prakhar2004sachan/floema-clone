@@ -4,6 +4,12 @@ import AboutTitle from "../Components/About/AboutTitle";
 import AboutInfo from "../Components/About/AboutInfo";
 import { content, fillInfo } from "../../data/about/content";
 import AboutInfoFixed from "../Components/About/AboutInfoFixed";
+import AboutHighlights from "../Components/About/AboutHighlights";
+import image1 from "../assets/about/images/Copia.png";
+import image2 from "../assets/about/images/CopiaRoots.png";
+import image3 from "../assets/about/images/e.jpg";
+import image4 from "../assets/about/images/f.jpg";
+import AboutPoster from "../Components/About/AboutPoster";
 
 function About() {
   console.log(content);
@@ -23,12 +29,25 @@ function About() {
           imgUrl={content[0].img}
           display={content[0].display}
         />
+        <div className="-mt-[8rem]">
+          <AboutHighlights
+            img1={image1}
+            img2={image2}
+            text={"Floema"}
+            left_2="45%"
+            top_2="65%"
+            left_1="20%"
+          />
+        </div>
+
+        <div className="my-[12rem] h-1"></div>
         <AboutInfoFixed
           info={fillInfo[0].info}
           content={fillInfo[0].text}
           imgUrl={fillInfo[0].img}
           display={fillInfo[0].display}
         />
+        <AboutPoster />
         <AboutTitle>
           The surprise of what is possible
           <br />
@@ -50,6 +69,17 @@ function About() {
           display={content[1].display}
           fixed="true"
         />
+        <div className="my-[12rem] h-[80vh]">
+          <AboutHighlights
+            img1={image4}
+            img2={image3}
+            text={"Instagram"}
+            left_2="55%"
+            top_2="45%"
+            left_1="20%"
+          />
+        </div>
+        <div className="mt-[10rem] h-10"></div>
       </div>
     </div>
   );
