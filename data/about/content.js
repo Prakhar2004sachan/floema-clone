@@ -1,5 +1,7 @@
 import img1 from "../../src/assets/about/images/WEB--2.png";
 import img2 from "../../src/assets/about/images/b.jpg";
+import img3 from "../../src/assets/about/images/Prizm-Effect_def.png";
+import img4 from "../../src/assets/about/images/DSC03908-Edit.png";
 
 const content = [
   {
@@ -16,4 +18,19 @@ const content = [
   },
 ];
 
-export default content;
+const fillInfo = [
+  {
+    info: "THE BRAND",
+    text: "FLOEMA is a new jewelry brand all design and handmade by me, Valentina Caprini, goldsmith, and artist based in Florence.\n\n The name FLOEMA is inspired by the vascular tissue of the plants, which brings the lifeblood from the roots to the branches and makes flowers and fruits bloom.\n\n Each FLOEMA piece is elegant and unique, created with a refined goldsmith’s technique in a small laboratory equipped with machines dated to the beginning of the ‘900. \n\n Like the lifeblood makes the plant evolve, so FLOEMA gives part of its income to PLAN INTERNATIONAL, a charity that works hard to eliminate the child brides phenomenon.",
+    img: img3,
+    display: "right",
+  },
+  {
+    info: "JEWELRY CARE",
+    text: "All FLOEMA jewels are exclusively realized using precious metals: 925 silver (pure for the Filigree) and 18kt gold. All metals are subjected to a natural oxidation process, that depends either on natural factors like oxygen in the air, the salt in the sea, sunlight, skin ph, or on chemical factors, like creams and perfumes.\n\n Please find two ways to clean gold and silver with natural ingredients,\n\n To make your piece return to its original condition: \n\n Gold is slightly subjected to the oxidation process. To make your jewel shine again put your jewels in a solution of half cup of white vinegar and salt for at least 30 minutes.\n\n With a white cotton soft cloth dipped in the solution first brush your piece and then rinse it with plenty of water and voila! \n\n To take the oxidation off silver you have to use one ingredient only: bicarbonate. \n\n Pour 250ml of lukewarm water and 5 spoons of bicarbonate in a container. Mixed until it is melted. Leave your silver jewels in the solution over the night, then brush them with a toothbrush until they shine again. Finally, rinse and dry with soft cloth.",
+    img: img4,
+    display: "left",
+  },
+];
+
+export { content, fillInfo };
