@@ -30,7 +30,7 @@ function NavBar() {
         <img src={logo} alt="logo" className="w-[9rem]" />
       </Link>
       <Link
-        className="font-main font-[600] text-[1.5rem] tracking-wider"
+        className="font-main font-[400] text-[1.5rem] tracking-wider"
         to={to}
       >
         {title}
