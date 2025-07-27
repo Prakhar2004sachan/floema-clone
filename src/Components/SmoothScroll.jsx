@@ -11,7 +11,7 @@ const SmoothScroll = ({ children }) => {
    const scroll = new LocomotiveScroll({
      el: scrollRef.current,
      smooth: true,
-     lerp: 0.05,
+     lerp: 0.03,
    });
 
    // Update scroll when content changes
