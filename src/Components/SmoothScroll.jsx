@@ -12,7 +12,7 @@ const SmoothScroll = ({ children }) => {
      el: scrollRef.current,
      smooth: true,
      lerp: 0.03,
-     ignore: ".navbar",
+     ignore: [".navbar"],
    });
 
    // Update scroll when content changes
@@ -28,7 +28,7 @@ const SmoothScroll = ({ children }) => {
  }, []);
 
   return (
-    <div data-scroll-container ref={scrollRef}>
+    <div data-scroll-container ref={scrollRef} className="relative">
       {children}
     </div>
   );

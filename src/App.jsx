@@ -7,15 +7,17 @@ import NavBar from "./Components/NavBar";
 
 function App() {
   return (
-    <div className="w-full">
-        <NavBar />
-        <Routes>
-          <Route path="about" element={<About />} />
-          <Route path="/" element={<Home />} />
-        </Routes>
-      </div>
-    //     <SmoothScroll>
-    // </SmoothScroll>
+    <>
+      <NavBar className="navbar" />
+      <SmoothScroll>
+        <div className="w-full">
+          <Routes>
+            <Route path="about" element={<About />} />
+            <Route path="/" element={<Home />} />
+          </Routes>
+        </div>
+      </SmoothScroll>
+    </>
   );
 }
 

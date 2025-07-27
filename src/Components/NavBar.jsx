@@ -22,14 +22,17 @@ function NavBar() {
   const { title, to } = getPageInfo();
   return (
     <div
-      className={`navbar fixed top-0 left-0 w-full py-[3rem] px-[2rem] flex justify-between z-50 items-center ${
+      className={`fixed top-0 left-0 w-full py-[3rem] px-[2rem] flex justify-between z-50 items-center ${
         title === "Collections" ? "text-black brightness-0" : "text-white"
       }`}
     >
       <Link to="/">
         <img src={logo} alt="logo" className="w-[9rem]" />
       </Link>
-      <Link className="font-main font-[600] text-[1.5rem]" to={to}>
+      <Link
+        className="font-main font-[600] text-[1.5rem] tracking-wider"
+        to={to}
+      >
         {title}
       </Link>
     </div>
