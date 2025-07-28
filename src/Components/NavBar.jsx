@@ -4,15 +4,19 @@ import { Link, useLocation } from "react-router";
 
 function NavBar() {
   const location = useLocation();
+  const slug = location.pathname.split('/details/')
+
+  console.log("NavBar params:",  slug[1] , location.pathname );
+
   const getPageInfo = () => {
-    switch (location.pathname) {
-      case "/":
+    switch (true) {
+      case location.pathname === "/":
         return { title: "About", to: "/about" };
-      case "/about":
+      case location.pathname === "/about":
         return { title: "Collections", to: "/collections" };
-      case "/details":
-        return { title: "About", to: "/" };
-      case "/collections":
+      case location.pathname === `/details/${slug[1]}`:
+        return { title: "About", to: "/about" };
+      case location.pathname === "/collections":
         return { title: "About", to: "/about" };
       default:
         return { title: "Home", to: "/" };
@@ -22,7 +26,7 @@ function NavBar() {
   const { title, to } = getPageInfo();
   return (
     <div
-      className={`fixed top-0 left-0 w-full py-[3rem] px-[2rem] flex justify-between z-50 items-center ${
+      className={`nav-wrapper fixed font-main font-thin top-0 left-0 w-full py-[3rem] px-[2rem] flex justify-between z-50 items-center ${
         title === "Collections" ? "text-black brightness-0" : "text-white"
       }`}
     >
@@ -30,7 +34,7 @@ function NavBar() {
         <img src={logo} alt="logo" className="w-[9rem]" />
       </Link>
       <Link
-        className="font-main font-[400] text-[1.5rem] tracking-wider"
+        className="text-[1.5rem] tracking-wider"
         to={to}
       >
         {title}

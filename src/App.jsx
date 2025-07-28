@@ -6,6 +6,7 @@ import { Routes, Route, Link } from "react-router";
 import NavBar from "./Components/NavBar";
 import Preloader from "./Components/Preloader";
 import Collection from "./Pages/Collection";
+import Details from "./Pages/Details";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Routes>
             <Route path="about" element={<About />} />
             <Route path="/" element={<Home />} />
+            <Route path="/details/:slug" element={<Details />} />
             <Route path="/collections" element={<Collection />} />
             <Route path="/preloader" element={<Preloader />} />
           </Routes>
