@@ -16,10 +16,12 @@ import img13 from "../assets/home/gallery/13.png";
 import img14 from "../assets/home/gallery/14.png";
 import img15 from "../assets/home/gallery/15.png";
 import cta from "../assets/home/cta.svg";
+import { useNavigate } from "react-router";
 
 function Home() {
   const [isLoading, setIsLoading] = useState(true);
   const [percentage, setPercentage] = useState(0);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const totalItems = 100;
@@ -75,11 +77,12 @@ function Home() {
                 />
               ))}
             </div>
-            <img
-              src={cta}
-              alt="cta"
-              className="absolute w-[20rem] bottom-10 z-16"
-            />
+            <button
+              onClick={() => navigate("/collections")}
+              className="absolute bottom-10 z-16"
+            >
+              <img src={cta} alt="cta" className=" w-[20rem] cursor-pointer" />
+            </button>
           </div>
         </div>
       )}
