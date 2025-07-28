@@ -21,9 +21,39 @@
 }
 
 @theme {
-  --font-main: "GeorgeX" !important;;
+  --font-main: "GeorgeX" !important;
   --font-text: "SuisseBPIntL", "sans-serif";
   --font-text-heading: "SuisseBPIntR", "sans-serif";
   /* --font-text: "SuisseBPIntL", "sans-serif";  */
 }
 
+.home_wrapper::before {
+  content: "";
+  height: 24rem;
+  width: 100%;
+  z-index: 15;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    0deg,
+    rgba(201, 113, 100, 0) 0%,
+    rgb(201, 113, 100) 94%,
+    rgb(201, 113, 100) 100%
+  );
+}
+.home_wrapper::after {
+  content: "";
+  height: 24rem;
+  width: 100%;
+  z-index: 15;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(201, 113, 100, 0) 0%,
+    rgb(201, 113, 100) 94%,
+    rgb(201, 113, 100) 100%
+  );
+}
