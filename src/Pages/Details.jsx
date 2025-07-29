@@ -25,18 +25,18 @@ function Details() {
       Loading...
     </div>
   ) : (
-    <div className="bg-[#BC978C] w-full h-screen overflow-hidden flex items-center justify-center text-white flex-col relative">
-      <div className="flex w-full justify-center gap-[12rem] items-center px-[15rem] mt-15">
+    <div className="bg-[#BC978C] w-full lg:h-screen lg:overflow-hidden flex items-center justify-center text-white flex-col relative">
+      <div className="flex flex-col lg:flex-row w-full justify-center gap-5 2xl:gap-[12rem] items-center lg:px-[2rem] 2xl:px-[8rem] mt-[8rem]">
         <img
           src={productDetails.img}
           alt="product-front"
-          className="w-[30rem] -rotate-3"
+          className="w-[60vw] md:w-[30rem] lg:w-[20rem] xl:w-[30rem] -rotate-3"
         />
-        <div className="flex-1">
+        <div className="flex-1 lg:w-[50vw] xl:w-full px-5 mt-8">
           <h4 className="font-text-heading text-sm">
             {productDetails.collection}
           </h4>
-          <h1 className="font-main font-thin text-[8rem] break-all word-break-break-all leading-[1.2]">
+          <h1 className="font-main font-thin text-[3rem] md:text-[5rem] 3x:text-[6rem] break-all word-break-break-all leading-[1.2]">
             {productDetails.name?.split(" ").map((word, index) => (
               <span key={index}>
                 {word}
@@ -45,7 +45,7 @@ function Details() {
             ))}
           </h1>
           <div className="pl-[5rem] py-6">
-            <div className="flex flex-col gap-5 font-text">
+            <div className="flex flex-col gap-9 font-text">
               <div className="flex gap-8 items-center">
                 <img src={arrow} alt="" />
                 <p>{productDetails.arrow}</p>
@@ -54,16 +54,16 @@ function Details() {
                 <img src={star} alt="" />
                 <p>{productDetails.star}</p>
               </div>
-              <div className="flex gap-3 items-start font-text justify-between">
+              <div className="flex gap-7 items-start font-text">
                 <p className="opacity-50 uppercase text-sm">info</p>
-                <p className="w-[36.5rem]">{productDetails.info}</p>
+                <p className="">{productDetails.info}</p>
               </div>
-              <div className="flex gap-3 items-start font-text justify-between">
+              <div className="flex gap-3 items-start font-text">
                 <p className="opacity-50 uppercase text-sm">you should know</p>
-                <p className="w-[40rem]">{productDetails.description}</p>
+                <p className="">{productDetails.description}</p>
               </div>
             </div>
-            <div className="font-main text-[3rem] mt-5 cursor-pointer">
+            <div className="font-main text-[3rem] lg:text-[1.5rem] xl:text-[3rem] mt-[5rem] lg:mt-2 cursor-pointer">
               Shop it <span className="font-text">↗</span>
             </div>
           </div>
@@ -71,7 +71,7 @@ function Details() {
       </div>
       <button
         onClick={() => navigate(-1)}
-        className="absolute bottom-8 cursor-pointer"
+        className="hidden lg:block absolute bottom-8 cursor-pointer z-10"
       >
         <img src={back} alt="back" className="w-32" />
       </button>
