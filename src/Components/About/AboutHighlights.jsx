@@ -44,15 +44,12 @@ function AboutHighlights({
   }, []);
 
   return (
-    <section
-      ref={sectionRef}
-      className="relative min-h-[80vh]"
-    >
+    <section ref={sectionRef} className="relative min-h-[80vh]">
       <img
         ref={img1Ref}
         src={img1}
         alt="Highlight Image 1"
-        className="absolute z-10 w-[19rem]"
+        className="absolute z-10 w-[10rem] md:w-[19rem]"
         style={{
           top: top_1 ? `${top_1}` : bottom_1 ? `calc(100% - ${bottom_1})` : "0",
           left: left_1
@@ -63,14 +60,14 @@ function AboutHighlights({
         }}
         onLoad={handleImageLoad}
       />
-      <h3 className="font-main font-extralight text-[10rem] -rotate-90 lowercase absolute left-1/2 -translate-x-3/4 top-1/2 -translate-y-1/2 z-10">
+      <h3 className="font-main font-extralight text-[8rem] md:text-[10rem] -rotate-90 lowercase absolute left-1/2 -translate-x-1/2 md:-translate-x-3/4 top-1/2 -translate-y-1/2 z-10">
         {text}
       </h3>
       <img
         ref={img2Ref}
         src={img2}
         alt="Highlight Image 2"
-        className="absolute z-10 w-[19rem]"
+        className="absolute z-10 w-[10rem] md:w-[19rem]"
         style={{
           top: top_2 ? `${top_2}` : bottom_2 ? `calc(100% - ${bottom_2})` : "0",
           left: left_2

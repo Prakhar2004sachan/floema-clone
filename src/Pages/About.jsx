@@ -35,7 +35,7 @@ function About() {
           imgUrl={content[0].img}
           display={content[0].display}
         />
-        <div className="-mt-[8rem] " style={{ height: highlightHeight1 }}>
+        <div className="mt-[5rem] xl:-mt-[8rem] " style={{ height: highlightHeight1 }}>
           <AboutHighlights
             img1={image1}
             img2={image2}
@@ -67,14 +67,14 @@ function About() {
           display={fillInfo[1].display}
         />
         <AboutInfo
-          classImg="pl-[10rem] -rotate-3"
+          classImg="xl:pl-[10rem] -rotate-3"
           info={content[1].info}
           content={content[1].text}
           imgUrl={content[1].img}
           display={content[1].display}
           fixed="true"
         />
-        <div className="my-[10rem]" style={{ height: highlightHeight1 }}>
+        <div className="mt-[10rem]" style={{ height: highlightHeight1 }}>
           <AboutHighlights
             img1={image4}
             img2={image3}
