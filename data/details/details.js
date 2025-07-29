@@ -27,8 +27,8 @@ const details = [
   },
   {
     slug: "gold-necklace",
-    name: "Silver Necklace",
-    collection: "vita collection",
+    name: "Gold Necklace",
+    collection: "Mineral collection",
     img: img1,
     arrow:
       "The necklace is 44cm long.\n The setting is 5 mm long and 4 mm wide.",
