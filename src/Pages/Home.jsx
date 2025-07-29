@@ -64,8 +64,8 @@ function Home() {
       {!isLoading && (
         <div className="bg-[#C97164] w-full h-screen overflow-hidden no-scroll text-white relative">
           <div className="home_wrapper w-full h-full flex items-center justify-center">
-            <h1 className="font-main text-[7rem] -rotate-90 absolute left-1/2 -translate-x-1/2 z-5 whitespace-nowrap">
-              Earrings Collections
+            <h1 className="font-main text-[5rem] md:text-[7rem] -rotate-90 absolute left-1/2 -translate-x-1/2 z-5 whitespace-nowrap">
+              Luxury Collections
             </h1>
             <div className="gallery absolute top-0 left-0">
               {galleryImages.map((img, index) => (
@@ -81,7 +81,7 @@ function Home() {
               onClick={() => navigate("/collections")}
               className="absolute bottom-10 z-16"
             >
-              <img src={cta} alt="cta" className=" w-[20rem] cursor-pointer" />
+              <img src={cta} alt="cta" className="w-[15rem] md:w-[20rem] cursor-pointer" />
             </button>
           </div>
         </div>
