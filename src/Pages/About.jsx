@@ -35,11 +35,15 @@ function About() {
           imgUrl={content[0].img}
           display={content[0].display}
         />
-        <div className="mt-[5rem] xl:-mt-[8rem] " style={{ height: highlightHeight1 }}>
+        <div
+          className="mt-[5rem] xl:-mt-[8rem] "
+          style={{ height: highlightHeight1 }}
+        >
           <AboutHighlights
             img1={image1}
             img2={image2}
             text={"Floema"}
+            textClass={"md:-translate-x-3/4"}
             left_2="45%"
             top_2="65%"
             left_1="20%"
@@ -82,6 +86,8 @@ function About() {
             left_2="55%"
             top_2="45%"
             left_1="20%"
+            img1Class={"md:w-[25rem]"}
+            img2Class={"md:w-[25rem]"}
             onHeightCalculated={(height) => setHighlightHeight2(`${height}px`)}
           />
         </div>
