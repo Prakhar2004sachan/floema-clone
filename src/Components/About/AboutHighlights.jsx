@@ -30,7 +30,7 @@ function AboutHighlights({
       const sectionRect = section.getBoundingClientRect();
       const img1Rect = img1.getBoundingClientRect();
       const img2Rect = img2.getBoundingClientRect();
-      console.log(sectionRect, img1Rect, img2Rect);
+      // console.log(sectionRect, img1Rect, img2Rect);
 
       const maxTop = Math.min(img1Rect.top, img2Rect.top) - sectionRect.top;
       const maxBottom =
@@ -38,7 +38,7 @@ function AboutHighlights({
       const totalHeight = maxBottom - maxTop;
 
       onHeightCalculated(`${totalHeight}`);
-      console.log(totalHeight);
+      // console.log(totalHeight);
     }
   };
 
@@ -47,12 +47,12 @@ function AboutHighlights({
   }, []);
 
   return (
-    <section ref={sectionRef} className="relative min-h-[80vh]">
+    <section ref={sectionRef} className="relative min-h-[25rem] lg:min-h-[80vh]">
       <img
         ref={img1Ref}
         src={img1}
         alt="Highlight Image 1"
-        className={`absolute z-10 w-[10rem] md:w-[19rem] ${img1Class}`}
+        className={`absolute z-10 w-[10rem] lg:w-[19rem] ${img1Class}`}
         style={{
           top: top_1 ? `${top_1}` : bottom_1 ? `calc(100% - ${bottom_1})` : "0",
           left: left_1
@@ -63,14 +63,14 @@ function AboutHighlights({
         }}
         onLoad={handleImageLoad}
       />
-      <h3 className={`font-main font-extralight text-[8rem] md:text-[10rem] -rotate-90 lowercase absolute left-1/2 -translate-x-1/2  top-1/2 -translate-y-1/2 z-10 ${textClass}`}>
+      <h3 className={`font-main font-extralight md:text-[8rem] lg:text-[10rem] -rotate-90 lowercase absolute left-1/2 -translate-x-1/2  top-1/2 -translate-y-1/2 z-10 ${textClass}`}>
         {text}
       </h3>
       <img
         ref={img2Ref}
         src={img2}
         alt="Highlight Image 2"
-        className={`absolute z-10 w-[10rem] md:w-[19rem] ${img2Class}`}
+        className={`absolute z-10 w-[10rem] lg:w-[19rem] ${img2Class}`}
         style={{
           top: top_2 ? `${top_2}` : bottom_2 ? `calc(100% - ${bottom_2})` : "0",
           left: left_2

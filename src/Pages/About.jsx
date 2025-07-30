@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, {  useState } from "react";
 import AboutGallery from "../Components/About/AboutGallery";
 import AboutTitle from "../Components/About/AboutTitle";
 import AboutInfo from "../Components/About/AboutInfo";
@@ -16,14 +16,14 @@ function About() {
   // console.log(fillInfo);
   const [highlightHeight1, setHighlightHeight1] = useState("80vh");
   const [highlightHeight2, setHighlightHeight2] = useState("80vh");
-  useEffect(() => {
-    console.log(highlightHeight1);
-    console.log(highlightHeight2);
-  }, [highlightHeight1, highlightHeight2]);
+  // useEffect(() => {
+  //   console.log(highlightHeight1);
+  //   console.log(highlightHeight2);
+  // }, [highlightHeight1, highlightHeight2]);
   return (
-    <div className="bg-[rgb(178,184,195)] w-full">
+    <div className="bg-[rgb(178,184,195)] w-full py-[2rem] ">
       <AboutGallery />
-      <div className="">
+      <div>
         <AboutTitle>
           Creating new dialogues
           <br />
@@ -43,7 +43,7 @@ function About() {
             img1={image1}
             img2={image2}
             text={"Floema"}
-            textClass={"md:-translate-x-3/4"}
+            textClass={"text-[5rem] md:-translate-x-3/4"}
             left_2="45%"
             top_2="65%"
             left_1="20%"
@@ -78,7 +78,10 @@ function About() {
           display={content[1].display}
           fixed="true"
         />
-        <div className="mt-[10rem]" style={{ height: highlightHeight1 }}>
+        <div
+          className="mt-[5rem] md:mt-[10rem]"
+          style={{ height: highlightHeight2 }}
+        >
           <AboutHighlights
             img1={image4}
             img2={image3}
@@ -86,8 +89,9 @@ function About() {
             left_2="55%"
             top_2="45%"
             left_1="20%"
-            img1Class={"md:w-[25rem]"}
-            img2Class={"md:w-[25rem]"}
+            textClass={"text-[5rem]"}
+            img1Class={"lg:w-[25rem]"}
+            img2Class={"lg:w-[25rem]"}
             onHeightCalculated={(height) => setHighlightHeight2(`${height}px`)}
           />
         </div>
